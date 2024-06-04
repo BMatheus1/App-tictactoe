@@ -1,0 +1,105 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+  }
+  
+  h1 {
+    color: #61dafb; /* Azul claro */
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .game {
+    text-align: center;
+  }
+  
+  .game-board {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #1c1f24; /* Fundo do tabuleiro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    background: #61dafb; /* Azul claro para os quadrados */
+    border: 2px solid #282c34; /* Borda escura */
+    font-size: 48px; /* Fonte grande */
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 100px; /* Largura maior */
+    height: 100px; /* Altura maior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .square:hover {
+    background: #21a1f1; /* Azul escuro ao passar o mouse */
+  }
+  
+  button {
+    background-color: #61dafb; /* Fundo azul claro para botões */
+    color: #282c34; /* Texto escuro */
+    border: 2px solid #282c34; /* Borda escura */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #21a1f1; /* Fundo azul escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  #status {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  #celebration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #61dafb;
+    font-size: 2.5rem;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 0.3s, opacity 0.3s;
+    opacity: 0;
+  }
+  
+  #celebration.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

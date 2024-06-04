@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="game-board" id="board">
+      <!-- Tabuleiro com nove quadrados -->
+      <div class="board-row">
+        <button class="square" data-index="0"></button>
+        <button class="square" data-index="1"></button>
+        <button class="square" data-index="2"></button>
+      </div>
+      <div class="board-row">
+        <button class="square" data-index="3"></button>
+        <button class="square" data-index="4"></button>
+        <button class="square" data-index="5"></button>
+      </div>
+      <div class="board-row">
+        <button class="square" data-index="6"></button>
+        <button class="square" data-index="7"></button>
+        <button class="square" data-index="8"></button>
+      </div>
+    </div>
+    <div class="game-info">
+      <div id="status"></div> <!-- Exibe o status do jogo -->
+      <button id="restart">Restart Game</button> <!-- Botão para reiniciar o jogo -->
+    </div>
+  </div>
+  <div id="celebration" class="hidden">Parabéns, o vencedor é&nbsp;<span id="winner-name"></span>!</div>
+  <!-- Mensagem de comemoração -->
+  <script src="script.js"></script>
+</body>
+</html>
